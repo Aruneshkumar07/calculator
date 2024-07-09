@@ -1,0 +1,125 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+	background-color: rgb(66, 66, 66);
+	background-size: 100%;
+	background-image: url(https://img.freepik.com/free-photo/calculator-money-notepad-orange-background-copy-space_169016-24503.jpg);
+	}
+	H1{
+		padding-left: 500px;
+		margin: 10px;
+		padding-top: 90px;
+		color: rgb(0, 0, 0);
+		letter-spacing: 10px;
+		font-size: 40px;
+	}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 1080px;
+	margin: 30px 150px;
+	margin-top: 150px;
+	
+}
+
+#container {
+	width: 200px;
+	padding: 8px 8px 20px 8px;
+	margin: 10px;
+	border-radius: 4px;
+	border: 2px solid rgb(193, 193, 193);
+	background-color:rgba(192, 106, 8, 0.516);
+}
+
+#display {
+	display: block;
+	margin: 15px auto;
+	height: 42px;
+	width: 174px;
+	border-radius: 4px;
+	border: 2px solid rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	font-size: 28px;
+	color: #666;
+	text-align: right;
+}
+
+.button {
+	display: inline-block;
+	margin: 2px;
+	width: 42px;
+	height: 42px;
+	font-size: 16px;
+	border-radius: 4px;
+}
+
+.mathButtons {
+	margin: 2px 2px 6px 2px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(67, 67, 67);
+	border: 2px solid rgb(24, 24, 24);
+}
+
+.digits {
+	color: rgb(24, 24, 24);
+	background-color: rgb(235, 235, 235);
+	border: 2px solid rgb(193, 193, 193);
+	border-radius: 4px;
+}
+
+.digits:hover,.mathButtons:hover,#clearButton:hover
+ {
+    background-color: rgb(255, 186, 117);
+	border: 2px solid rgb(174, 87, 0);
+}
+
+#clearButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(210, 0, 0);
+	border: 2px solid rgb(128, 0, 0);
+}
+  </style>
+  <body>
+	<h1>CALCULATOR</h1>
+  <div class="container">
+	
+	<fieldset id="container">
+		<form name="calculator">
+
+			<input id="display" type="text" name="display" readonly>
+
+			<input class="button digits" type="button" value="7">
+			<input class="button digits" type="button" value="8">
+			<input class="button digits" type="button" value="9">
+			<input class="button mathButtons" type="button" value="+">
+			<br>
+			<input class="button digits" type="button" value="4">
+			<input class="button digits" type="button" value="5">
+			<input class="button digits" type="button" value="6">
+			<input class="button mathButtons" type="button" value="-">
+			<br>
+			<input class="button digits" type="button" value="1">
+			<input class="button digits" type="button" value="2">
+			<input class="button digits" type="button" value="3">
+			<input class="button mathButtons" type="button" value="x">
+			<br>
+			<input id="clearButton" class="button" type="button" value="C" >
+			<input class="button digits" type="button" value="0">
+			<input class="button mathButtons" type="button" value="=">
+			<input class="button mathButtons" type="button" value="/">
+		</form>
+	</fieldset>
+</div>
+  </body>
+</html>
+</body>
+</html>
